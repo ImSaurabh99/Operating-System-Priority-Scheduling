@@ -49,4 +49,13 @@ for(i=0; i<n; i++)
         totwt+=wt[i];
         totta+=ta[i];
     }
-    
+    awt=(float)totwt/n;
+    ata=(float)totta/n;
+    printf("\nProcess Id\tArrival time\tBurst time\tWaiting time\tTurn Around time");
+    for(i=0; i<n; i++)
+    printf("\n%s\t\t%5d\t\t%5d\t\t%5d\t\t%5d",pn[i],at[i],et[i],wt[i],ta[i]);
+    printf("\nAverage waiting time is:%f",awt);
+    printf("\nAverage turnaroundtime is:%f",ata);
+    getch();
+}
+
